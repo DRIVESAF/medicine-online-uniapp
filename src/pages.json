@@ -1,0 +1,96 @@
+{
+  // 组件自动导入
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom", //隐藏默认导航栏
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/consult/consult",
+      "style": {
+        "navigationBarTitleText": "咨询"
+      }
+    },
+    {
+      "path": "pages/examine/examine",
+      "style": {
+        "navigationBarTitleText": "考核"
+      }
+    },
+    {
+      "path": "pages/activity/activity",
+      "style": {
+        "navigationBarTitleText": "活动"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  // 设置 TabBar
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#029d57",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/icon_shouye2.png",
+        "selectedIconPath": "static/tabbar/icon_shouye.png"
+      },
+      {
+        "text": "咨询",
+        "pagePath": "pages/consult/consult",
+        "iconPath": "static/tabbar/icon_zixun2.png",
+        "selectedIconPath": "static/tabbar/icon_zixun.png"
+      },
+      {
+        "text": "考核",
+        "pagePath": "pages/examine/examine",
+        "iconPath": "static/tabbar/icon_kaohe.png",
+        "selectedIconPath": "static/tabbar/icon_kaohe_selected.png"
+      },
+      {
+        "text": "活动",
+        "pagePath": "pages/activity/activity",
+        "iconPath": "static/tabbar/icon_vector.png",
+        "selectedIconPath": "static/tabbar/icon_vector_selected.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tabbar/icon_wode2.png",
+        "selectedIconPath": "static/tabbar/icon_wode.png"
+      }
+    ]
+  }
+}
